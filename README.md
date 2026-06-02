@@ -18,5 +18,6 @@ append("test.txt", "World")
 read("test.txt")
 readlines("test.txt", newline=True)
 ```
+[Project Repo Github](https://github.com/batuhansenol/pyfastfile) - [Author Profile](https://github.com/batuhansenol)
 
---Batuhan Şenol
+*--Batuhan Şenol*
