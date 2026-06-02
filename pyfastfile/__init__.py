@@ -1,0 +1,30 @@
+from .mod_overwrite import overwrite
+from .mod_append import append
+from .mod_read import read
+
+
+from importlib.metadata import version
+
+try:
+    __version__ = version("pyfastfile")
+except Exception:
+    __version__ = "0.0.0"
+
+def signature(show=False):
+    data = (
+        f"pyfastfile v{__version__}\n"
+        "Experimental Toolkit\n"
+        "Author: Batuhan Şenol"
+    )
+
+    if show:
+        print(data)
+
+    return data
+
+__all__ = [
+    "signature",
+    "overwrite",
+    "append",
+    "read"
+]
