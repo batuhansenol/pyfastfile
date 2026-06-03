@@ -1,7 +1,8 @@
 from .mod_overwrite import overwrite
 from .mod_append import append
 from .mod_read import read
-
+from .mod_readlines import readlines
+from .mod_getline import getline
 
 from importlib.metadata import version
 
@@ -26,5 +27,7 @@ __all__ = [
     "signature",
     "overwrite",
     "append",
-    "read"
+    "read",
+    "readlines",
+    "getline"
 ]
