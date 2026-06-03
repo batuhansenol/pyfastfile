@@ -29,6 +29,11 @@ pf.find_num("test.txt", "testdata") # Return Index
 pf.destroynewline("test")
 
 ```
+## Optional 
+```py
+    encoding="utf-8"
+```
+
 [Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
 
 [Author Github Profile](https://github.com/batuhansenol) • [Author PyPI Profile](https://pypi.org/user/Batuhan_Senol/)
