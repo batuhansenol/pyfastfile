@@ -11,13 +11,17 @@ pip install pyfastfile
 ## Usage
 
 ```python
-from pyfastfile import overwrite, append, read, readlines, getline
+import pyfastfile as pf
 
-overwrite("test.txt", "Hello")
-append("test.txt", "World")
-read("test.txt")
-readlines("test.txt", newline=True)
-getline("test.txt", line=0, newline=True)
+pf.overwrite("test.txt", "Hello")
+pf.append("test.txt", "World")
+pf.read("test.txt")
+pf.readlines("test.txt", newline=True)
+pf.getline("test.txt", line=0, newline=True)
+pf.exists("test.txt")
+pf.find("test.txt", "testdata")
+pf.find_num("test.txt", "testdata") # Return Index
+
 ```
 [Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
 

@@ -3,6 +3,9 @@ from .mod_append import append
 from .mod_read import read
 from .mod_readlines import readlines
 from .mod_getline import getline
+from .mod_exists import exists
+from .mod_find import find
+from .mod_find_num import find_num
 
 from importlib.metadata import version
 
@@ -29,5 +32,8 @@ __all__ = [
     "append",
     "read",
     "readlines",
-    "getline"
+    "getline",
+    "exists",
+    "find",
+    "find_num"
 ]
