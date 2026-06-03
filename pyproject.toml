@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyfastfile"
-version = "0.1.5post3"
+version = "0.1.5post4"
 description = "A lightweight and fast Python API for simplifying file operations"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -18,7 +18,6 @@ keywords = ["file", "io", "filesystem", "utility", "fastfile"]
 
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Topic :: System :: Filesystems"

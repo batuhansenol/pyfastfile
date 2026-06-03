@@ -13,7 +13,7 @@ pip install pyfastfile
 ```python
 import pyfastfile as pf
 
-# === Main Functions
+# === Main Functions === 
 
 pf.overwrite("test.txt", "Hello")
 pf.append("test.txt", "World")
@@ -31,7 +31,7 @@ pf.destroynewline("test")
 ```
 ## Optional 
 ```py
-    encoding="utf-8"
+    encoding="utf-8" 
 ```
 
 [Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
