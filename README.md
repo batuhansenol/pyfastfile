@@ -8,31 +8,27 @@ A lightweight Python library for __easy-to-use__ operations.
 pip install pyfastfile
 ```
 
-## Usage
+# Usage
 
-```python
-import pyfastfile as pf
+## Main Functions
 
-# === Main Functions === 
+|Function Name|Description|Arguments|Returns|
+|-------------|-----------|---------|-------|
+|`overwrite()`|Overwrites a file with given content.|`path`:`str`, `data`:`str`,`encoding`:`str`|`None`|
+|`append()`|Appends data to the end of a file.|`path`:`str`, `data`:`str`|`None`|
+|`read()`|Reads entire file content as string.|`path`:`str`|`str`|
+|`readlines()`|Returns file lines as a list.|`path`:`str`, `newline`:`bool`|`list`|
+|`getline()`|Returns a specific line from file.|`path`:`str`, `line`:`int`,`newline`:`bool`|`str`|
+|`exists()`|Checks if file exists.|`path`:`str`|`bool`|
+|`find()`|Returns lines containing target text.|`path`:`str`,`data`:`str`|`list[str]`|
+|`find_num()`|Returns line numbers matching target text.|`path`:`str`,`data`:str|`list[int]`|
 
-pf.overwrite("test.txt", "Hello")
-pf.append("test.txt", "World")
-pf.read("test.txt")
-pf.readlines("test.txt", newline=True)
-pf.getline("test.txt", line=0, newline=True)
-pf.exists("test.txt")
-pf.find("test.txt", "testdata")
-pf.find_num("test.txt", "testdata") # Return Index
+## Utility Functions
 
-# === Utility Functions ===
+|Function Name|Description|Arguments|Returns|
+|-------------|-----------|---------|-------|
+|`destroynewline()`|Removes newline characters from text.|`data`:`str`|`str`|
 
-pf.destroynewline("test")
-
-```
-## Optional 
-```py
-    encoding="utf-8" 
-```
 
 [Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
 
