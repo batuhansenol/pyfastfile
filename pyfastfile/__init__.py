@@ -8,7 +8,7 @@ from .mod_find import find
 from .mod_find_num import find_num
 
 
-from .uti_mod_destroynewline import destroynewline
+from .utility_functions import destroynewline
 
 from importlib.metadata import version
 
@@ -39,7 +39,7 @@ __all__ = [
     "exists",
     "find",
     "find_num",
-
+    
 
 
     "destroynewline"
