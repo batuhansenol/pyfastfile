@@ -1,6 +1,6 @@
 # pyfastfile
 
-A lightweight Python library for simple and fast file operations.
+A lightweight Python library for simple and fast __easy__ operations.
 
 ## Installation
 
@@ -18,6 +18,8 @@ append("test.txt", "World")
 read("test.txt")
 readlines("test.txt", newline=True)
 ```
-[Project Repo Github](https://github.com/batuhansenol/pyfastfile) - [Author Profile](https://github.com/batuhansenol)
+[Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
+
+[Author Github Profile](https://github.com/batuhansenol) • [Author PyPI Profile](https://pypi.org/user/Batuhan_Senol/)
 
 *--Batuhan Şenol*
