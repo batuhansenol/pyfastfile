@@ -13,6 +13,6 @@ def find(
     with open(path, "r", encoding=encoding) as f:
         for line in f:
             if data in line:
-                lines.append(f)
+                lines.append(line)
     
     return lines

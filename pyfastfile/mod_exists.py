@@ -10,7 +10,4 @@ def exists(
 
     file = Path(path)
 
-    if file.exists():
-        return True
-    else:
-        return False
+    return file.exists()
