@@ -10,6 +10,7 @@ from .mod_find_num import find_num
 
 from .utility_functions import destroynewline
 
+
 from importlib.metadata import version
 
 try:
