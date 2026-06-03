@@ -5,8 +5,9 @@ from .debug_functions import check
 
 def find_num(
         path:str=None,
-        encoding:str="utf-8",
-        data:str=None
+        data:str=None,
+        encoding:str="utf-8"
+        
 ):
     
     check(path, data)
