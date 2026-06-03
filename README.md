@@ -1,6 +1,6 @@
 # pyfastfile
 
-A lightweight Python library for simple and fast __easy__ operations.
+A lightweight Python library for __easy-to-use__ operations.
 
 ## Installation
 
