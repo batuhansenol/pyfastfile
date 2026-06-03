@@ -13,6 +13,8 @@ pip install pyfastfile
 ```python
 import pyfastfile as pf
 
+# === Main Functions
+
 pf.overwrite("test.txt", "Hello")
 pf.append("test.txt", "World")
 pf.read("test.txt")
@@ -21,6 +23,10 @@ pf.getline("test.txt", line=0, newline=True)
 pf.exists("test.txt")
 pf.find("test.txt", "testdata")
 pf.find_num("test.txt", "testdata") # Return Index
+
+# === Utility Functions ===
+
+pf.destroynewline("test")
 
 ```
 [Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
