@@ -21,7 +21,7 @@ pip install pyfastfile
 |`getline()`|Returns a specific line from file.|`path`:`str`, `line`:`int`,`newline`:`bool`,`encoding`:`str`|`str`|
 |`exists()`,`encoding`:`str`|Checks if file exists.|`path`:`str`|`bool`|
 |`find()`|Returns lines containing target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[str]`|
-|`find_num()`|Returns line numbers matching target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[int]`|
+|`find_num()`|Returns line numbers matching target text.|`path`:`str`,`data`:`str`|`list[int]`|
 |`delete()`|Delete target file.|`path`:`str`|`None`|
 |`rename()`|Rename target file.|`path`:`str`, `name`:`str`|`None`|
 
