@@ -32,7 +32,11 @@ def signature(show=False):
 
     return data
 
-__all__ = [
+__all__ = [] 
+
+# Main Functions 
+ 
+__all__ += [
     "signature",
     "overwrite",
     "append",
@@ -40,13 +44,13 @@ __all__ = [
     "readlines",
     "getline",
     "exists",
-    "find",
-    "find_num",
-    "delete",
-    "rename",
-    
+    "find", 
+    "find_num", 
+    "delete", 
+    "rename", ] 
 
-
-    "destroynewline",
-    "limp"
-]
+# Utility Functions 
+ 
+__all__ += [ 
+    "destroynewline", 
+    "limp" ]
