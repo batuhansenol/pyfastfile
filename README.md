@@ -22,13 +22,15 @@ pip install pyfastfile
 |`exists()`,`encoding`:`str`|Checks if file exists.|`path`:`str`|`bool`|
 |`find()`|Returns lines containing target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[str]`|
 |`find_num()`|Returns line numbers matching target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[int]`|
+|`delete()`|Delete target file.|`path`:`str`|`None`|
+|`rename()`|Rename target file.|`path`:`str`, `name`:`str`|`None`|
 
 ## Utility Functions
 
 |Function Name|Description|Arguments|Returns|
 |-------------|-----------|---------|-------|
 |`destroynewline()`|Removes newline characters from text.|`data`:`str`|`str`|
-
+|`limp()`|Only: list(map(...))|`func`:`function`,`lst`:`list`|`list`|
 
 [Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
 

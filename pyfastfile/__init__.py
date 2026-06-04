@@ -6,10 +6,12 @@ from .mod_getline import getline
 from .mod_exists import exists
 from .mod_find import find
 from .mod_find_num import find_num
+from .mod_delete import delete
+from .mod_rename import rename
 
 
 from .utility_functions import destroynewline
-
+from .utility_functions import limp
 
 from importlib.metadata import version
 
@@ -40,8 +42,11 @@ __all__ = [
     "exists",
     "find",
     "find_num",
+    "delete",
+    "rename",
     
 
 
-    "destroynewline"
+    "destroynewline",
+    "limp"
 ]
