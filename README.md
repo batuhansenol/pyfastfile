@@ -15,13 +15,13 @@ pip install pyfastfile
 |Function Name|Description|Arguments|Returns|
 |-------------|-----------|---------|-------|
 |`overwrite()`|Overwrites a file with given content.|`path`:`str`, `data`:`str`,`encoding`:`str`|`None`|
-|`append()`|Appends data to the end of a file.|`path`:`str`, `data`:`str`|`None`|
-|`read()`|Reads entire file content as string.|`path`:`str`|`str`|
-|`readlines()`|Returns file lines as a list.|`path`:`str`, `newline`:`bool`|`list`|
-|`getline()`|Returns a specific line from file.|`path`:`str`, `line`:`int`,`newline`:`bool`|`str`|
-|`exists()`|Checks if file exists.|`path`:`str`|`bool`|
-|`find()`|Returns lines containing target text.|`path`:`str`,`data`:`str`|`list[str]`|
-|`find_num()`|Returns line numbers matching target text.|`path`:`str`,`data`:str|`list[int]`|
+|`append()`|Appends data to the end of a file.|`path`:`str`, `data`:`str`,`encoding`:`str`|`None`|
+|`read()`|Reads entire file content as string.|`path`:`str`,`encoding`:`str`|`str`|
+|`readlines()`|Returns file lines as a list.|`path`:`str`, `newline`:`bool`,`encoding`:`str`|`list`|
+|`getline()`|Returns a specific line from file.|`path`:`str`, `line`:`int`,`newline`:`bool`,`encoding`:`str`|`str`|
+|`exists()`,`encoding`:`str`|Checks if file exists.|`path`:`str`|`bool`|
+|`find()`|Returns lines containing target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[str]`|
+|`find_num()`|Returns line numbers matching target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[int]`|
 
 ## Utility Functions
 
