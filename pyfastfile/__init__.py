@@ -1,17 +1,5 @@
-from .mod_overwrite import overwrite
-from .mod_append import append
-from .mod_read import read
-from .mod_readlines import readlines
-from .mod_getline import getline
-from .mod_exists import exists
-from .mod_find import find
-from .mod_find_num import find_num
-from .mod_delete import delete
-from .mod_rename import rename
-
-
-from .utility_functions import destroynewline
-from .utility_functions import limp
+from .main_functions import __all__ as _main
+from .utility_functions import __all__ as _utility
 
 from importlib.metadata import version
 
@@ -32,21 +20,4 @@ def signature(show=False):
 
     return data
 
-__all__ = [
-    "signature",
-    "overwrite",
-    "append",
-    "read",
-    "readlines",
-    "getline",
-    "exists",
-    "find",
-    "find_num",
-    "delete",
-    "rename",
-    
-
-
-    "destroynewline",
-    "limp"
-]
+__all__ = _main + _utility + ["signature"]
