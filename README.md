@@ -1,13 +1,20 @@
 
+# pyfastfile
+
+
+
+
+A lightweight Python library for __easy-to-use__ operations.
+
+----
+
 ![logo](logo.png)
 
-A lightweight Python library for __easy-to-use__ operations. \
- \
 ![python](https://img.shields.io/badge/Python-3.10+-blue.svg?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-Apache%202.0-green)
-![Version](https://img.shields.io/badge/Version-0.1.7post4-orange)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Type](https://img.shields.io/badge/API-File%20Operations-informational)
+![Github]( https://img.shields.io/badge/github-repo-blue?logo=github)
 
 ## Installation
 
