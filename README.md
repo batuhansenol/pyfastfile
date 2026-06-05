@@ -39,6 +39,14 @@ pip install pyfastfile
 |`delete()`|Delete target file.|`path`:`str`|`None`|
 |`rename()`|Rename target file.|`path`:`str`, `name`:`str`|`None`|
 
+## Csv Functions
+
+|Function Name|Description|Arguments|Returns|
+|-------------|-----------|---------|-------|
+|`csv_read()`|Read target csv.|`path`:`str`,`encoding`:`str`|`Generator`|
+|`csv_append()`|Appends data to the end of a csv file.| `path`:`str`,`data`:`list`,`encoding`:`str`| `None`|
+|`csv_getheader()`|Return header of the target csv file.|`path`:`str`,`encoding`:`str`|`list`|
+
 ## Utility Functions
 
 |Function Name|Description|Arguments|Returns|

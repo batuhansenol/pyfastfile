@@ -1,3 +1,6 @@
+
+# Main Functions
+
 from .main_functions import overwrite
 from .main_functions import append
 from .main_functions import read
@@ -9,9 +12,17 @@ from .main_functions import find_num
 from .main_functions import delete
 from .main_functions import rename
 
+# Csv Functions
+
+from .csv_functions import csv_getheader
+from .csv_functions import csv_append
+from .csv_functions import csv_read
+
+# Utility Functions
 
 from .utility_functions import destroynewline
 from .utility_functions import limp
+
 
 from importlib.metadata import version
 
@@ -54,3 +65,11 @@ __all__ += [
 __all__ += [ 
     "destroynewline", 
     "limp" ]
+
+# Csv Functions
+
+__all__ += [
+    "csv_read",
+    "csv_getheader",
+    "csv_append"
+]
