@@ -17,6 +17,9 @@ from .main_functions import rename
 from .csv_functions import csv_getheader
 from .csv_functions import csv_append
 from .csv_functions import csv_read
+from .csv_functions import csv_getcolumn
+from .csv_functions import csv_getrow
+from .csv_functions import csv_getdata
 
 # Utility Functions
 
@@ -71,5 +74,8 @@ __all__ += [
 __all__ += [
     "csv_read",
     "csv_getheader",
-    "csv_append"
+    "csv_append",
+    "csv_getrow",
+    "csv_getcolumn",
+    "csv_getdata"
 ]

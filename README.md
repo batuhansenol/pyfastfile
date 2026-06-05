@@ -46,6 +46,9 @@ pip install pyfastfile
 |`csv_read()`|Read target csv.|`path`:`str`,`encoding`:`str`|`Generator`|
 |`csv_append()`|Appends data to the end of a csv file.| `path`:`str`,`data`:`list`,`encoding`:`str`| `None`|
 |`csv_getheader()`|Return header of the target csv file.|`path`:`str`,`encoding`:`str`|`list`|
+|`csv_getrow()`|Return target row of the csv file.| `path`:`str`,`encoding`:`str`,`row`:`int`|`list`|
+|`csv_getcolumn()`|Return target column of the csv file.|`path`:`str`,`encoding`:`str`,`column`:`str`|`list`
+|`csv_getdata()`|Gets a value from CSV by row and column.|`path`:`str`,`encoding`:`str`,`column`:`str`,`row`:`int`|`any`|
 
 ## Utility Functions
 
