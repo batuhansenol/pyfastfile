@@ -1,7 +1,7 @@
 
 
 from pathlib import Path
-from .debug_functions import check
+from ..debug_functions import check
 
 def exists(
         path:str=None,

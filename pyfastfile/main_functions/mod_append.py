@@ -1,5 +1,5 @@
 
-from .debug_functions import check
+from ..debug_functions import check
 
 def append(
         path:str=None,

@@ -1,6 +1,6 @@
 
 
-from .debug_functions import check
+from ..debug_functions import check
 from pathlib import Path
 
 def delete(

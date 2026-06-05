@@ -1,13 +1,13 @@
-from .mod_overwrite import overwrite
-from .mod_append import append
-from .mod_read import read
-from .mod_readlines import readlines
-from .mod_getline import getline
-from .mod_exists import exists
-from .mod_find import find
-from .mod_find_num import find_num
-from .mod_delete import delete
-from .mod_rename import rename
+from .main_functions import overwrite
+from .main_functions import append
+from .main_functions import read
+from .main_functions import readlines
+from .main_functions import getline
+from .main_functions import exists
+from .main_functions import find
+from .main_functions import find_num
+from .main_functions import delete
+from .main_functions import rename
 
 
 from .utility_functions import destroynewline
