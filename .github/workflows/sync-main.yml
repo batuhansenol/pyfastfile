@@ -1,4 +1,4 @@
-name: Sync main with latest tag
+name: Sync main and Publish to PyPI
 
 on:
   push:
@@ -9,9 +9,8 @@ permissions:
   contents: write
 
 jobs:
-  sync:
+  sync-and-publish:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -23,12 +22,26 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-      - name: Get tag commit
+      - name: Reset main to tag commit
         run: |
-          TAG_COMMIT=$(git rev-list -n 1 ${{ github.ref }})
+          TAG_COMMIT=$(git rev-list -n 1 "${{ github.ref }}")
           git checkout main
-          git reset --hard $TAG_COMMIT
-
-      - name: Push main
-        run: |
+          git reset --hard "$TAG_COMMIT"
           git push origin main --force
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install build tools
+        run: pip install build twine
+
+      - name: Build package
+        run: python -m build
+
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: twine upload dist/*
