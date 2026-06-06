@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -20,10 +20,11 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-      - name: Update main to tag
+      - name: Get tag commit
         run: |
+          TAG_COMMIT=$(git rev-list -n 1 ${{ github.ref }})
           git checkout main
-          git reset --hard ${{ github.ref_name }}
+          git reset --hard $TAG_COMMIT
 
       - name: Push main
         run: |
