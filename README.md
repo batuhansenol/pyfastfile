@@ -2,8 +2,6 @@
 # pyfastfile
 
 
-
-
 A lightweight Python library for __easy-to-use__ operations.
 
 ----
@@ -53,7 +51,9 @@ All index-based functions use **zero-based indexing**.
 |`csv_getrow()`|Return target row of the csv file.| `path`:`str`,`row`:`int`,`encoding`:`str`|`list`|s
 |`csv_getcolumn()`|Return target column of the csv file.|`path`:`str`,`column`:`str`,`encoding`:`str`|`list`|
 |`csv_getdata()`|Gets a value from CSV by row and column.|`path`:`str`,`row`:`int`,`column`:`str`,`encoding`:`str`,|`any`|
-|`csv_updaterow()`|Update target row|
+|`csv_updaterow()`|Update target row|`path`:`str`,`row`:`int`,`new_data`:`list`,`encoding`:`str`|`None`|
+|`csv_overwrite()`|Overwrite on target file.|`path`:`str`,`data`:`list`,`encoding`:`str`|`None`|
+|`csv_count()`|Return lenght of target file.|`path`:`str`,`withheader`:`bool`| `int`|
 
 
 ## Utility Functions
