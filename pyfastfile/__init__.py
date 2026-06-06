@@ -11,6 +11,7 @@ from .main_functions import find
 from .main_functions import find_num
 from .main_functions import delete
 from .main_functions import rename
+from .main_functions import touch
 
 # Csv Functions
 
@@ -20,6 +21,9 @@ from .csv_functions import csv_read
 from .csv_functions import csv_getcolumn
 from .csv_functions import csv_getrow
 from .csv_functions import csv_getdata
+from .csv_functions import csv_overwrite
+from .csv_functions import csv_count
+from .csv_functions import csv_updaterow
 
 # Utility Functions
 
@@ -61,13 +65,16 @@ __all__ += [
     "find", 
     "find_num", 
     "delete", 
-    "rename", ] 
+    "rename",
+    "touch"
+] 
 
 # Utility Functions 
  
 __all__ += [ 
     "destroynewline", 
-    "limp" ]
+    "limp" 
+]
 
 # Csv Functions
 
@@ -77,5 +84,8 @@ __all__ += [
     "csv_append",
     "csv_getrow",
     "csv_getcolumn",
-    "csv_getdata"
+    "csv_getdata",
+    "csv_overwrite",
+    "csv_count",
+    "csv_updaterow"
 ]

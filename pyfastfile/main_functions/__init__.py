@@ -8,3 +8,4 @@ from .mod_read import read
 from .mod_readlines import readlines
 from .mod_overwrite import overwrite
 from .mod_rename import rename
+from .mod_touch import touch

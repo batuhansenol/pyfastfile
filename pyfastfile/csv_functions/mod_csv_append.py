@@ -12,6 +12,10 @@ def csv_append(
 
     with open(path, "a", newline="", encoding=encoding) as f:
         writer = csv.writer(f)
-        writer.writerow(data)
+        
+        if isinstance(data[0], (list, tuple)):
+            writer.writerows(data)
+        else:
+            writer.writerow(data)
 
 

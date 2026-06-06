@@ -2,7 +2,6 @@
 
 from .mod_csv_getrow import csv_getrow
 from ..debug_functions import check
-import csv
 
 def csv_getdata(
         path:str=None,
