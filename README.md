@@ -40,6 +40,7 @@ All index-based functions use **zero-based indexing**.
 |`delete()`|Delete target file.|`path`:`str`|`None`|
 |`rename()`|Rename target file.|`path`:`str`, `name`:`str`|`None`|
 |`touch()`|Create file.|`path`:`str`,`existserror`:`bool`|`None`|
+|`move()`|Move files|`filepath`:`str`,`targetpath`:`str`|`None`|
 
 ## Csv Functions
 
