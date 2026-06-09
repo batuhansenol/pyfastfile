@@ -48,7 +48,7 @@ All index-based functions use **zero-based indexing**.
 |`csv_read()`|Read target csv.|`path`:`str`,`encoding`:`str`|`Generator`|
 |`csv_append()`|Appends data to the end of a csv file.| `path`:`str`,`data`:`list`,`encoding`:`str`| `None`|
 |`csv_getheader()`|Return header of the target csv file.|`path`:`str`,`encoding`:`str`|`list`|
-|`csv_getrow()`|Return target row of the csv file.| `path`:`str`,`row`:`int`,`encoding`:`str`|`list`|s
+|`csv_getrow()`|Return target row of the csv file.| `path`:`str`,`row`:`int`,`encoding`:`str`|`list`|
 |`csv_getcolumn()`|Return target column of the csv file.|`path`:`str`,`column`:`str`,`encoding`:`str`|`list`|
 |`csv_getdata()`|Gets a value from CSV by row and column.|`path`:`str`,`row`:`int`,`column`:`str`,`encoding`:`str`,|`any`|
 |`csv_updaterow()`|Update target row|`path`:`str`,`row`:`int`,`new_data`:`list`,`encoding`:`str`|`None`|
@@ -60,12 +60,13 @@ All index-based functions use **zero-based indexing**.
 
 |Function Name|Description|Arguments|Returns|
 |-------------|-----------|---------|-------|
-|`destroynewline()`|Removes newline characters from text.|`data`:`str`|`str`|
-|`limp()`|Only: list(map(...))|`func`:`function`,`lst`:`list`|`list`|
+|`destroy_newline()`|Removes newline characters from text.|`data`:`str`|`str`|
+|`lmap()`|Only: list(map(...))|`func`:`function`,`lst`:`list`|`list`|
+|`copy_to_clipboard()`|Copy text on clipboard|`text`:`str`|`None`|
 
 ---
 
-[Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) 
+[Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) --
 [Author Github Profile](https://github.com/batuhansenol) • [Author PyPI Profile](https://pypi.org/user/Batuhan_Senol/)
 
 *--Batuhan Şenol*

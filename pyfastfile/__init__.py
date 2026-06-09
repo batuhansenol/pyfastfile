@@ -12,6 +12,7 @@ from .main_functions import find_num
 from .main_functions import delete
 from .main_functions import rename
 from .main_functions import touch
+from .main_functions import move
 
 # Csv Functions
 
@@ -27,9 +28,9 @@ from .csv_functions import csv_updaterow
 
 # Utility Functions
 
-from .utility_functions import destroynewline
-from .utility_functions import limp
-
+from .utility_functions import destroynewline as destroy_newline
+from .utility_functions import limp as lmap 
+from .utility_functions import copy_to_clipboard
 
 from importlib.metadata import version
 
@@ -66,14 +67,16 @@ __all__ += [
     "find_num", 
     "delete", 
     "rename",
-    "touch"
+    "touch",
+    "move"
 ] 
 
 # Utility Functions 
  
 __all__ += [ 
-    "destroynewline", 
-    "limp" 
+    "destroy_newline", 
+    "lmap",
+    "copy_to_clipboard" 
 ]
 
 # Csv Functions
