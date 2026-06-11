@@ -30,7 +30,14 @@ from .csv_functions import csv_updaterow
 
 from .utility_functions import destroynewline as destroy_newline
 from .utility_functions import limp as lmap 
-from .utility_functions import copy_to_clipboard
+from .utility_functions import copy_to_clipboard 
+
+# json Functions
+
+from .json_functions import json_append
+from .json_functions import json_overwrite
+from .json_functions import json_delete_key
+from .json_functions import json_read
 
 from importlib.metadata import version
 
@@ -91,4 +98,14 @@ __all__ += [
     "csv_overwrite",
     "csv_count",
     "csv_updaterow"
+]
+
+
+# Json Functions
+
+__all__ += [
+    "json_append",
+    "json_overwrite",
+    "json_delete_key",
+    "json_read"
 ]

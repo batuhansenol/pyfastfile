@@ -25,6 +25,16 @@ pip install pyfastfile
 The `encoding` parameter defaults to **`utf-8`** in all functions that support text encoding. \
 All index-based functions use **zero-based indexing**.
 
+
+# Titles
+
+- [**Main Functions**](#main-functions)
+- [**Csv Functions**](#csv-functions)
+- [**Json Functions**](#json-functions)
+- [**Utility Functions**](#utility-functions)
+
+---
+
 ## Main Functions
 
 |Function Name|Description|Arguments|Returns|
@@ -55,6 +65,18 @@ All index-based functions use **zero-based indexing**.
 |`csv_updaterow()`|Update target row|`path`:`str`,`row`:`int`,`new_data`:`list`,`encoding`:`str`|`None`|
 |`csv_overwrite()`|Overwrite on target file.|`path`:`str`,`data`:`list`,`encoding`:`str`|`None`|
 |`csv_count()`|Return lenght of target file.|`path`:`str`,`withheader`:`bool`| `int`|
+
+
+
+## Json Functions
+
+| Function Name| Description| Arguments|Returns|
+| ------ | ----- | ----- | ----- |
+| `json_read()`       | Read target JSON file and parse its content.| `path`:`str`| `dict` |
+| `json_overwrite()`  | Overwrite target JSON file with new data.| `path`:`str`, `data`:`dict`, `encoding`:`str` | `None`|
+| `json_append()`     | Reads JSON file, merges new dictionary into existing data (key update behavior). | `path`:`str`, `data`:`dict`| `None`|
+| `json_delete_key()` | Deletes a specific key from JSON data and rewrites the file.| `path`:`str`, `key`:`str`, `encoding`:`str`| `None`|
+
 
 
 ## Utility Functions
