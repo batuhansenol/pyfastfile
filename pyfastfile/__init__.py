@@ -13,6 +13,10 @@ from .main_functions import delete
 from .main_functions import rename
 from .main_functions import touch
 from .main_functions import move
+from .main_functions import clear
+from .main_functions import count_lines
+from .main_functions import size_mb
+from .main_functions import size
 
 # Csv Functions
 
@@ -38,6 +42,11 @@ from .json_functions import json_append
 from .json_functions import json_overwrite
 from .json_functions import json_delete_key
 from .json_functions import json_read
+from .json_functions import json_get_keys
+from .json_functions import json_get_values
+from .json_functions import json_is_valid
+
+# __init__.py imports
 
 from importlib.metadata import version
 
@@ -75,7 +84,11 @@ __all__ += [
     "delete", 
     "rename",
     "touch",
-    "move"
+    "move",
+    "size",
+    "size_mb",
+    "count_lines",
+    "clear"
 ] 
 
 # Utility Functions 
@@ -107,5 +120,8 @@ __all__ += [
     "json_append",
     "json_overwrite",
     "json_delete_key",
-    "json_read"
+    "json_read",
+    "json_get_values",
+    "json_get_keys",
+    "json_is_valid"
 ]

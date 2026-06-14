@@ -10,3 +10,7 @@ from .mod_overwrite import overwrite
 from .mod_rename import rename
 from .mod_touch import touch
 from .mod_move import move
+from .mod_count_lines import count_lines
+from .mod_clear import clear
+from .mod_size import size
+from .mod_size_mb import size_mb

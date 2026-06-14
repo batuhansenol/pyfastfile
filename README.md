@@ -51,6 +51,10 @@ All index-based functions use **zero-based indexing**.
 |`rename()`|Rename target file.|`path`:`str`, `name`:`str`|`None`|
 |`touch()`|Create file.|`path`:`str`,`existserror`:`bool`|`None`|
 |`move()`|Move files|`filepath`:`str`,`targetpath`:`str`|`None`|
+| `clear()` | Clears the content of a file by overwriting it with an empty string. | `path: str`, `encoding: str = "utf-8"` | `None` |
+| `count_lines()` | Returns the number of lines in a file. | `path: str` | `int` |
+| `size_mb()` | Returns file size in megabytes. | `path: str` | `float` |
+| `size()` | Returns file size in bytes. | `path: str` | `int` |
 
 ## Csv Functions
 
@@ -76,6 +80,9 @@ All index-based functions use **zero-based indexing**.
 | `json_overwrite()`  | Overwrite target JSON file with new data.| `path`:`str`, `data`:`dict`, `encoding`:`str` | `None`|
 | `json_append()`     | Reads JSON file, merges new dictionary into existing data (key update behavior). | `path`:`str`, `data`:`dict`| `None`|
 | `json_delete_key()` | Deletes a specific key from JSON data and rewrites the file.| `path`:`str`, `key`:`str`, `encoding`:`str`| `None`|
+| `json_is_valid()`| Checks whether the target JSON file contains valid JSON data. | `path`:`str`|`bool`|
+| `json_get_values()` | Returns all values from the target JSON object.| `path`:`str`, `withlist`:`bool`, `encoding`:`str` | `dict_values` | `list` |
+|`json_get_keys()`| Returns all keys from the target JSON object.|`path`:`str`, `withlist`:`bool`, `encoding`:`str`|`dict_keys`|`list`|
 
 
 
