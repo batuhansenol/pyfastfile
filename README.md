@@ -31,7 +31,9 @@ All index-based functions use **zero-based indexing**.
 - [**Main Functions**](#main-functions)
 - [**Csv Functions**](#csv-functions)
 - [**Json Functions**](#json-functions)
+- [**Directory Functions**](#directory-functions)
 - [**Utility Functions**](#utility-functions)
+
 
 ---
 
@@ -52,9 +54,9 @@ All index-based functions use **zero-based indexing**.
 |`touch()`|Create file.|`path`:`str`,`existserror`:`bool`|`None`|
 |`move()`|Move files|`filepath`:`str`,`targetpath`:`str`|`None`|
 | `clear()` | Clears the content of a file by overwriting it with an empty string. | `path: str`, `encoding: str = "utf-8"` | `None` |
-| `count_lines()` | Returns the number of lines in a file. | `path: str` | `int` |
-| `size_mb()` | Returns file size in megabytes. | `path: str` | `float` |
-| `size()` | Returns file size in bytes. | `path: str` | `int` |
+| `count_lines()` | Returns the number of lines in a file. | `path`: `str` | `int` |
+| `size_mb()` | Returns file size in megabytes. | `path`:`str` | `float` |
+| `size()` | Returns file size in bytes. | `path`:`str` | `int` |
 
 ## Csv Functions
 
@@ -84,6 +86,17 @@ All index-based functions use **zero-based indexing**.
 | `json_get_values()` | Returns all values from the target JSON object.| `path`:`str`, `withlist`:`bool`, `encoding`:`str` | `dict_values` | `list` |
 |`json_get_keys()`| Returns all keys from the target JSON object.|`path`:`str`, `withlist`:`bool`, `encoding`:`str`|`dict_keys`|`list`|
 
+
+## Directory Functions
+| Function Name| Description| Arguments|Returns|
+| ------ | ----- | ----- | ----- |
+| `dir_create()`| Creates the target directory if it does not already exist.| `path`:`str`| `None`|
+| `dir_list()`| Lists all entries in the target directory.| `path`:`str`| `list`|
+| `dir_is_directory()`| Checks whether the target path is a directory.| `path`:`str`| `bool`|
+| `dir_delete()`| Deletes the target directory. Removes recursively if non-empty.| `path`:`str`| `None`|
+| `dir_is_empty()`| Checks whether the target directory is empty.| `path`:`str`| `bool`|
+| `dir_size()`| Returns the total size of the target directory in bytes, recursively.| `path`:`str`| `int`|
+| `dir_size_mb()`| Returns the total size of the target directory in megabytes, recursively.| `path`:`str`| `float`|
 
 
 ## Utility Functions
