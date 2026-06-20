@@ -34,7 +34,7 @@ All index-based functions use **zero-based indexing**.
 - [**Json Functions**](#json-functions)
 - [**Directory Functions**](#directory-functions)
 - [**Archive Functions**](#archive-functions)
-- [**Encryption Functions**](#encryption-functons)
+- [**Encryption Functions**](#encryption-functions)
 - [**Utility Functions**](#utility-functions)
 
 
