@@ -56,6 +56,13 @@ from .directory_functions import dir_list
 from .directory_functions import dir_size
 from .directory_functions import dir_size_mb
 
+# Archive Functions
+
+from .archive_functions import zip_list
+from .archive_functions import zip_create
+from .archive_functions import zip_extract
+from .archive_functions import zip_is_zipfile
+
 
 # __init__.py imports
 
@@ -147,4 +154,13 @@ __all__ += [
     "dir_is_empty",
     "dir_delete",
     "dir_is_directory"
+]
+
+# Archive Functions
+
+__all__ += [
+    "zip_is_zipfile",
+    "zip_list",
+    "zip_create",
+    "zip_extract"
 ]

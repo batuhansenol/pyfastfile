@@ -33,6 +33,7 @@ All index-based functions use **zero-based indexing**.
 - [**Json Functions**](#json-functions)
 - [**Directory Functions**](#directory-functions)
 - [**Utility Functions**](#utility-functions)
+- [**Archive Funtions**](#archive-functions)
 
 
 ---
@@ -98,6 +99,14 @@ All index-based functions use **zero-based indexing**.
 | `dir_size()`| Returns the total size of the target directory in bytes, recursively.| `path`:`str`| `int`|
 | `dir_size_mb()`| Returns the total size of the target directory in megabytes, recursively.| `path`:`str`| `float`|
 
+
+## Archive Functions
+|Function Name|Description|Arguments|Returns|
+|-------------|-----------|---------|-------|
+|`zip_create()`|Creates a zip archive from file or directory.|`path`:`str`, `targetpath`:`str`|`None`|
+|`zip_extract()`|Extracts a zip archive to target path.|`path`:`str`, `targetpath`:`str`|`None`|
+|`zip_is_zipfile()`|Checks if file is a valid zip archive.|`path`:`str`|`bool`|
+|`zip_list()`|Returns list of files inside zip archive.|`path`:`str`|`list`|
 
 ## Utility Functions
 
