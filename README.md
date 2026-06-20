@@ -14,6 +14,7 @@ A lightweight Python library for __easy-to-use__ operations.
 ![Type](https://img.shields.io/badge/API-File%20Operations-informational)
 ![Github]( https://img.shields.io/badge/github-repo-blue?logo=github)
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20"/>
+
 ## Installation
 
 ```bash
@@ -32,7 +33,7 @@ All index-based functions use **zero-based indexing**.
 - [**Csv Functions**](#csv-functions)
 - [**Json Functions**](#json-functions)
 - [**Directory Functions**](#directory-functions)
-- [**Archive Funtions**](#archive-functions)
+- [**Archive Functions**](#archive-functions)
 - [**Utility Functions**](#utility-functions)
 
 
