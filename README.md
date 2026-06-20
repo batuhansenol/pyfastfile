@@ -32,8 +32,9 @@ All index-based functions use **zero-based indexing**.
 - [**Csv Functions**](#csv-functions)
 - [**Json Functions**](#json-functions)
 - [**Directory Functions**](#directory-functions)
-- [**Utility Functions**](#utility-functions)
 - [**Archive Funtions**](#archive-functions)
+- [**Utility Functions**](#utility-functions)
+
 
 
 ---
