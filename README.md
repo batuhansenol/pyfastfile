@@ -34,6 +34,7 @@ All index-based functions use **zero-based indexing**.
 - [**Json Functions**](#json-functions)
 - [**Directory Functions**](#directory-functions)
 - [**Archive Functions**](#archive-functions)
+- [**Encryption Functions**](#encryption-functons)
 - [**Utility Functions**](#utility-functions)
 
 
@@ -52,10 +53,10 @@ All index-based functions use **zero-based indexing**.
 |`exists()`|Checks if file exists.|`path`:`str`|`bool`|
 |`find()`|Returns lines containing target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[str]`|
 |`find_num()`|Returns line numbers matching target text.|`path`:`str`,`data`:`str`,`encoding`:`str`|`list[int]`|
-|`delete()`|Delete target file.|`path`:`str`|`None`|
+|`delete()`|Deletes the target file.|`path`:`str`|`None`|
 |`rename()`|Rename target file.|`path`:`str`, `name`:`str`|`None`|
-|`touch()`|Create file.|`path`:`str`,`existserror`:`bool`|`None`|
-|`move()`|Move files|`filepath`:`str`,`targetpath`:`str`|`None`|
+|`touch()`|Creates a file.|`path`:`str`,`existserror`:`bool`|`None`|
+|`move()`|Moves a files|`filepath`:`str`,`targetpath`:`str`|`None`|
 | `clear()` | Clears the content of a file by overwriting it with an empty string. | `path: str`, `encoding: str = "utf-8"` | `None` |
 | `count_lines()` | Returns the number of lines in a file. | `path`: `str` | `int` |
 | `size_mb()` | Returns file size in megabytes. | `path`:`str` | `float` |
@@ -73,7 +74,7 @@ All index-based functions use **zero-based indexing**.
 |`csv_getdata()`|Gets a value from CSV by row and column.|`path`:`str`,`row`:`int`,`column`:`str`,`encoding`:`str`,|`any`|
 |`csv_updaterow()`|Update target row|`path`:`str`,`row`:`int`,`new_data`:`list`,`encoding`:`str`|`None`|
 |`csv_overwrite()`|Overwrite on target file.|`path`:`str`,`data`:`list`,`encoding`:`str`|`None`|
-|`csv_count()`|Return lenght of target file.|`path`:`str`,`withheader`:`bool`| `int`|
+|`csv_count()`|Return length of target file.|`path`:`str`,`withheader`:`bool`| `int`|
 
 
 
@@ -110,6 +111,14 @@ All index-based functions use **zero-based indexing**.
 |`zip_is_zipfile()`|Checks if file is a valid zip archive.|`path`:`str`|`bool`|
 |`zip_list()`|Returns list of files inside zip archive.|`path`:`str`|`list`|
 
+
+## Encryption Functions
+
+|Function Name|Description|Arguments|Returns|
+|-------------|-----------|---------|-------|
+|`enc_encrypt_file()`|Encrypt target file.|`path`:`str`,`targetpath`:`str`,`key`:`bytes`,`mode`:`str`|`None`|
+|`enc_decrypt_file()`|Decrypt target file.|`path`:`str`,`targetpath`:`str`,`key`:`bytes`,`mode`:`str`|`None`|
+
 ## Utility Functions
 
 |Function Name|Description|Arguments|Returns|
@@ -117,10 +126,13 @@ All index-based functions use **zero-based indexing**.
 |`destroy_newline()`|Removes newline characters from text.|`data`:`str`|`str`|
 |`lmap()`|Only: list(map(...))|`func`:`function`,`lst`:`list`|`list`|
 |`copy_to_clipboard()`|Copy text on clipboard|`text`:`str`|`None`|
+|`encrypt_bytes()`|Encrypt target bytes. (Only GCM)|`data`:`bytes`,`key`:`bytes`|`bytes`|
+|`decrypt_bytes()`|Decrypt target bytes. (Only GCM)|`data`:`bytes`,`key`:`bytes`|`bytes`|
 
 ---
 
-[Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/) --
+[Project Repo Github](https://github.com/batuhansenol/pyfastfile) • [Project Repo PyPI](https://pypi.org/project/pyfastfile/)
+
 [Author Github Profile](https://github.com/batuhansenol) • [Author PyPI Profile](https://pypi.org/user/Batuhan_Senol/)
 
 *--Batuhan Şenol*

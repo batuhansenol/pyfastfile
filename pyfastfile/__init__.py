@@ -35,6 +35,8 @@ from .csv_functions import csv_updaterow
 from .utility_functions import destroynewline as destroy_newline
 from .utility_functions import limp as lmap 
 from .utility_functions import copy_to_clipboard 
+from .utility_functions import encrypt_bytes
+from . utility_functions import decrypt_bytes
 
 # json Functions
 
@@ -63,6 +65,11 @@ from .archive_functions import zip_create
 from .archive_functions import zip_extract
 from .archive_functions import zip_is_zipfile
 
+
+# Encryption Functons
+
+from .encryption_functions import enc_decrypt_file
+from .encryption_functions import enc_encrypt_file
 
 # __init__.py imports
 
@@ -114,7 +121,9 @@ __all__ += [
 __all__ += [ 
     "destroy_newline", 
     "lmap",
-    "copy_to_clipboard" 
+    "copy_to_clipboard",
+    "encrypt_bytes",
+    "decrypt_bytes"
 ]
 
 # Csv Functions
@@ -163,4 +172,11 @@ __all__ += [
     "zip_list",
     "zip_create",
     "zip_extract"
+]
+
+# Encryption Functons
+
+__all__ += [
+    "enc_decrypt_file",
+    "enc_encrypt_file"
 ]
