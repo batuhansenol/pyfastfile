@@ -64,7 +64,12 @@ from .archive_functions import zip_list
 from .archive_functions import zip_create
 from .archive_functions import zip_extract
 from .archive_functions import zip_is_zipfile
+from .archive_functions import zip_append
 
+from .archive_functions import tar_append
+from .archive_functions import tar_extract
+from .archive_functions import tar_remove
+from .archive_functions import tar_create
 
 # Encryption Functons
 
@@ -171,7 +176,14 @@ __all__ += [
     "zip_is_zipfile",
     "zip_list",
     "zip_create",
-    "zip_extract"
+    "zip_extract",
+    "zip_append",
+    
+    "tar_create",
+    "tar_extract",
+    "tar_append",
+    "tar_append",
+    "tar_remove"
 ]
 
 # Encryption Functons

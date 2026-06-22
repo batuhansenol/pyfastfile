@@ -110,7 +110,12 @@ All index-based functions use **zero-based indexing**.
 |`zip_extract()`|Extracts a zip archive to target path.|`path`:`str`, `targetpath`:`str`|`None`|
 |`zip_is_zipfile()`|Checks if file is a valid zip archive.|`path`:`str`|`bool`|
 |`zip_list()`|Returns list of files inside zip archive.|`path`:`str`|`list`|
-
+|`zip_append()`|Appends a file to a zip archive.|`path`:`str`, `target`:`str`|`None`|
+|`tar_create()`|Creates a tar archive from directory.|`path`:`str`, `targetpath`:`str`|`None`|
+|`tar_extract()`|Extracts a tar archive to target path.|`path`:`str`, `targetpath`:`str`|`None`|
+|`tar_list()`|Returns list of files inside tar archive.|`path`:`str`|`list`|
+|`tar_remove()`|Removes a target file from a tar archive.|`path`:`str`, `target`:`str`|`None`|
+|`tar_append()`|Appends a file to a tar archive.|`path`:`str`, `target`:`str`|`None`|
 
 ## Encryption Functions
 
@@ -118,6 +123,8 @@ All index-based functions use **zero-based indexing**.
 |-------------|-----------|---------|-------|
 |`enc_encrypt_file()`|Encrypt target file.|`path`:`str`,`targetpath`:`str`,`key`:`bytes`,`mode`:`str`|`None`|
 |`enc_decrypt_file()`|Decrypt target file.|`path`:`str`,`targetpath`:`str`,`key`:`bytes`,`mode`:`str`|`None`|
+
+> Only AES256 algorithm support, modes: CTR, CBC, CFB, ECB, GCM, OFB
 
 ## Utility Functions
 
