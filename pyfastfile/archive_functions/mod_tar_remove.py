@@ -13,7 +13,8 @@ def tar_remove(path: str = None, target: str = None):
     with tarfile.open(path, "r") as tarold:
         with tarfile.open(temp_path, "w") as tarnew:
             for member in tarold.getmembers():
-                if member.name == target:
+                member_name = member.name.rsplit("/", 1)[-1]
+                if member.name == target or member_name == target:
                     continue
 
                 fileobj = tarold.extractfile(member)

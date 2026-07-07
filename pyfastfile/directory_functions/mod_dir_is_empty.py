@@ -11,7 +11,7 @@ def dir_is_empty(
     if (len(dir_list(path))) == 0:
         return True
     else:
-        False
+        return False
 
 
 

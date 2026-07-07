@@ -9,7 +9,7 @@ def csv_updaterow(
         path: str = None, 
         row: int = None, 
         new_data: list = None,
-        encoding:str="urf-8"):
+        encoding:str="utf-8"):
     
     check(path, row, new_data)
 

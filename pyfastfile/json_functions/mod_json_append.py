@@ -1,6 +1,7 @@
 
 
 from ..debug_functions import check
+from .mod_json_overwrite import json_overwrite
 from .mod_json_read import json_read
 
 
@@ -13,6 +14,7 @@ def json_append(
 
     jf_data = json_read(path=path)
     jf_data.update(data)
+    json_overwrite(path=path, data=jf_data)
     
 
 

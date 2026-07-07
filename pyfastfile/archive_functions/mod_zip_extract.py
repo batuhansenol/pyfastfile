@@ -1,5 +1,7 @@
 
 
+import zipfile as zip
+
 from .mod_zip_is_zipfile import zip_is_zipfile
 from ..debug_functions import fnf, check
 
@@ -15,7 +17,7 @@ def zip_extract(
         raise ValueError(f"{path} is not a valid zip file.")
     
     with zip.ZipFile(path, "r") as zf:
-        zf.extract(targetpath)
+        zf.extractall(targetpath)
         
         
     

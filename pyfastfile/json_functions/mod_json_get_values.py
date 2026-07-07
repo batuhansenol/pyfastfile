@@ -9,7 +9,7 @@ def json_get_values(
 ):
     check(path)
 
-    file = json_read(path=path, encoding=encoding)
+    file = json_read(path=path)
 
     if withlist:
         return list(file.values())

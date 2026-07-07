@@ -1,5 +1,7 @@
 
 
+import csv
+
 from .mod_csv_getrow import csv_getrow
 from ..debug_functions import check
 
@@ -11,7 +13,14 @@ def csv_getdata(
 ):
     check(path, row, column)
 
-    row_data = csv_getrow(path=path, row=row, encoding=encoding)
+    with open(path, "r", encoding=encoding) as f:
+        rows = list(csv.reader(f))
 
-    return row_data[column]
+    header = rows[0]
+    if row < 0:
+        raise IndexError("Row index out of range")
+    if row >= len(rows) - 1:
+        raise IndexError("Row index out of range")
+    row_data = rows[row + 1]
+    return row_data[header.index(column)]
 

@@ -182,7 +182,6 @@ __all__ += [
     "tar_create",
     "tar_extract",
     "tar_append",
-    "tar_append",
     "tar_remove"
 ]
 

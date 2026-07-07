@@ -12,4 +12,3 @@ def tar_extract(
     
     with tarfile.open(path, "r") as tar:
         tar.extractall(targetpath)
-    
