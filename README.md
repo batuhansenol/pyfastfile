@@ -48,6 +48,7 @@ All index-based functions use **zero-based indexing**.
 |`overwrite()`|Overwrites a file with given content.|`path`:`str`, `data`:`str`,`encoding`:`str`|`None`|
 |`append()`|Appends data to the end of a file.|`path`:`str`, `data`:`str`,`encoding`:`str`|`None`|
 |`read()`|Reads entire file content as string.|`path`:`str`,`encoding`:`str`|`str`|
+|`read_bytes()`|Reads entire file content as raw bytes.|`path`:`str`|`bytes`|
 |`readlines()`|Returns file lines as a list.|`path`:`str`, `newline`:`bool`,`encoding`:`str`|`list`|
 |`getline()`|Returns a specific line from file.|`path`:`str`, `line`:`int`,`newline`:`bool`,`encoding`:`str`|`str`|
 |`exists()`|Checks if file exists.|`path`:`str`|`bool`|
@@ -110,12 +111,12 @@ All index-based functions use **zero-based indexing**.
 |`zip_extract()`|Extracts a zip archive to target path.|`path`:`str`, `targetpath`:`str`|`None`|
 |`zip_is_zipfile()`|Checks if file is a valid zip archive.|`path`:`str`|`bool`|
 |`zip_list()`|Returns list of files inside zip archive.|`path`:`str`|`list`|
-|`zip_append()`|Appends a file to a zip archive.|`path`:`str`, `target`:`str`|`None`|
+|`zip_append()`|Appends a file to a zip archive.|`zip_file`:`str`, `file`:`str`|`None`|
 |`tar_create()`|Creates a tar archive from directory.|`path`:`str`, `targetpath`:`str`|`None`|
 |`tar_extract()`|Extracts a tar archive to target path.|`path`:`str`, `targetpath`:`str`|`None`|
 |`tar_list()`|Returns list of files inside tar archive.|`path`:`str`|`list`|
 |`tar_remove()`|Removes a target file from a tar archive.|`path`:`str`, `target`:`str`|`None`|
-|`tar_append()`|Appends a file to a tar archive.|`path`:`str`, `target`:`str`|`None`|
+|`tar_append()`|Appends a file to a tar archive.|`tar_file`:`str`, `file`:`str`|`None`|
 
 ## Encryption Functions
 

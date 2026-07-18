@@ -1,5 +1,5 @@
 
-from ..debug_functions import check
+from ..debug_functions import check, fnf
 
 def append(
         path:str=None,
@@ -9,6 +9,7 @@ def append(
         ):
     
     check(path, data)
+    fnf(path)
 
     with open(path, "a", encoding=encoding) as f:
         if newline:

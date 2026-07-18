@@ -1,5 +1,5 @@
 
-from ..debug_functions import check
+from ..debug_functions import check, fnf
 
 def getline(
         path:str=None,
@@ -9,6 +9,7 @@ def getline(
 ):
     
     check(path)
+    fnf(path)
 
     with open(path, "r", encoding=encoding) as f:
         lines = f.readlines()

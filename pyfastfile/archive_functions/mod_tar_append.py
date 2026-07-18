@@ -3,12 +3,12 @@ from ..debug_functions import check, fnf
 import tarfile
 
 def tar_append(
-    path:str=None,
-    target:str=None
+    zip_file:str=None,
+    file:str=None
 ):
-    check(path, target)
-    fnf(path); fnf(target)
+    check(zip_file, file)
+    fnf(zip_file); fnf(file)
     
-    with tarfile.open(path, "a") as tar:
-        tar.add(target)
+    with tarfile.open(zip_file, "a") as tar:
+        tar.add(file)
 

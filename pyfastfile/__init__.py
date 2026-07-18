@@ -17,6 +17,7 @@ from .main_functions import clear
 from .main_functions import count_lines
 from .main_functions import size_mb
 from .main_functions import size
+from .main_functions import read_bytes
 
 # Csv Functions
 
@@ -118,7 +119,8 @@ __all__ += [
     "size",
     "size_mb",
     "count_lines",
-    "clear"
+    "clear",
+    "read_bytes"
 ] 
 
 # Utility Functions 

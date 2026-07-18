@@ -14,3 +14,4 @@ from .mod_count_lines import count_lines
 from .mod_clear import clear
 from .mod_size import size
 from .mod_size_mb import size_mb
+from .mod_read_bytes import read_bytes

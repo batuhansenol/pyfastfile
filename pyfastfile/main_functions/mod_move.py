@@ -1,7 +1,7 @@
 
 
 
-from ..debug_functions import check
+from ..debug_functions import check, fnf
 import shutil as sh
 
 
@@ -10,5 +10,6 @@ def move(
         targetpath:str=None
 ):
     check(filepath, targetpath)
+    fnf(filepath)
 
     sh.move(filepath, targetpath)

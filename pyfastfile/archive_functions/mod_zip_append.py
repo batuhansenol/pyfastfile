@@ -5,10 +5,10 @@ import zipfile
 
 
 def zip_append(
-    path:str=None,
-    target:str=None
+    zip_file:str=None,
+    file:str=None
 ):
-    check(path, target); fnf(path)
+    check(zip_file, file); fnf(zip_file)
 
-    with zipfile.ZipFile(path, "a") as zip:
-        zip.write(target, arcname=os.path.basename(target))
+    with zipfile.ZipFile(zip_file, "a") as zip:
+        zip.write(file, arcname=os.path.basename(file))

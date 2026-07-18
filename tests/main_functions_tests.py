@@ -11,6 +11,7 @@ from pyfastfile.main_functions.mod_getline import getline
 from pyfastfile.main_functions.mod_move import move
 from pyfastfile.main_functions.mod_overwrite import overwrite
 from pyfastfile.main_functions.mod_read import read
+from pyfastfile.main_functions.mod_read_bytes import read_bytes
 from pyfastfile.main_functions.mod_readlines import readlines
 from pyfastfile.main_functions.mod_rename import rename
 from pyfastfile.main_functions.mod_size import size
@@ -23,6 +24,7 @@ from .conftest import print_test_result
 def test_text_file_helpers(tmp_path):
     print_test_result("text_file_helpers", "manipulates text file content", True)
     file_path = tmp_path / "notes.txt"
+    file_path.write_text("", encoding="utf-8")
 
     append(str(file_path), "alpha")
     append(str(file_path), "beta", newline=False)
@@ -32,6 +34,7 @@ def test_text_file_helpers(tmp_path):
     assert find_num(str(file_path), "beta") == [1]
     assert getline(str(file_path), 1) == "beta"
     assert readlines(str(file_path), newline=False) == ["alpha", "beta"]
+    assert read_bytes(str(file_path)) == b"alpha\nbeta"
 
     clear(str(file_path))
     assert read(str(file_path)) == ""
